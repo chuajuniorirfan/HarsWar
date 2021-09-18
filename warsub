@@ -5,6 +5,7 @@ local Title = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
 local UIGradient_2 = Instance.new("UIGradient")
 local FlyButton = Instance.new("TextButton")
+local FlySpeed = Instance.new("IntValue")
 local Frame = Instance.new("Frame")
 local Speed = Instance.new("TextButton")
 local SpeedNegative = Instance.new("TextButton")
@@ -69,6 +70,10 @@ Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0, 0, -0.349999994, 0)
 Frame.Size = UDim2.new(1, 0, 0.241379306, 0)
+
+FlySpeed.Parent = FlyButton
+FlySpeed.Name = "FlySpeed"
+FlySpeed.Value = 1
 
 Speed.Name = "Speed"
 Speed.Parent = HarsFrame
