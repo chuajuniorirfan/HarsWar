@@ -1,0 +1,151 @@
+local HarsWar = Instance.new("ScreenGui")
+local HarsFrame = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UIGradient_2 = Instance.new("UIGradient")
+local FlyButton = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
+local SpeedNegative = Instance.new("TextButton")
+
+HarsWar.Name = "HarsWar"
+HarsWar.Parent = game.CoreGui
+HarsWar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+HarsFrame.Name = "HarsFrame"
+HarsFrame.Parent = HarsWar
+HarsFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+HarsFrame.BorderSizePixel = 0
+HarsFrame.Position = UDim2.new(0.241095886, 0, 0.101391651, 0)
+HarsFrame.Size = UDim2.new(0.418264836, 0, 0.506958246, 0)
+HarsFrame.Active = true
+HarsFrame.Draggable = true
+
+Line.Name = "Line"
+Line.Parent = HarsFrame
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0.0262008738, 0, 0.188235298, 0)
+Line.Size = UDim2.new(0.947598279, 0, 0.0235294122, 0)
+
+Title.Name = "Title"
+Title.Parent = Line
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0, 0, -6, 0)
+Title.Size = UDim2.new(1, 0, 6, 0)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "HarsWar"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.60, Color3.fromRGB(60, 60, 60)), ColorSequenceKeypoint.new(0.63, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(45, 45, 45)), ColorSequenceKeypoint.new(0.70, Color3.fromRGB(60, 60, 60)), ColorSequenceKeypoint.new(0.77, Color3.fromRGB(255, 163, 163)), ColorSequenceKeypoint.new(0.77, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.92, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.98, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 97, 97)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = Title
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.12, Color3.fromRGB(29, 0, 255)), ColorSequenceKeypoint.new(0.17, Color3.fromRGB(8, 0, 255)), ColorSequenceKeypoint.new(0.87, Color3.fromRGB(255, 23, 23)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Line
+
+FlyButton.Name = "FlyButton"
+FlyButton.Parent = HarsFrame
+FlyButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+FlyButton.BorderSizePixel = 0
+FlyButton.Position = UDim2.new(0.0262008738, 0, 0.34117648, 0)
+FlyButton.Size = UDim2.new(0.292576432, 0, 0.113725491, 0)
+FlyButton.Font = Enum.Font.GothamBold
+FlyButton.Text = "Fly"
+FlyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlyButton.TextScaled = true
+FlyButton.TextSize = 14.000
+FlyButton.TextWrapped = true
+FlyButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/3eWkaFE4'))()
+end)
+
+Frame.Parent = FlyButton
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, -0.349999994, 0)
+Frame.Size = UDim2.new(1, 0, 0.241379306, 0)
+
+Speed.Name = "Speed"
+Speed.Parent = HarsFrame
+Speed.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.353711784, 0, 0.34117648, 0)
+Speed.Size = UDim2.new(0.292576432, 0, 0.113725491, 0)
+Speed.Font = Enum.Font.GothamBold
+Speed.Text = "Fly +"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+Speed.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/pe0YLTfc'))()
+end)
+
+SpeedNegative.Name = "SpeedNegative"
+SpeedNegative.Parent = HarsFrame
+SpeedNegative.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+SpeedNegative.BorderSizePixel = 0
+SpeedNegative.Position = UDim2.new(0.681222677, 0, 0.34117648, 0)
+SpeedNegative.Size = UDim2.new(0.292576432, 0, 0.113725491, 0)
+SpeedNegative.Font = Enum.Font.GothamBold
+SpeedNegative.Text = "Fly -"
+SpeedNegative.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedNegative.TextScaled = true
+SpeedNegative.TextSize = 14.000
+SpeedNegative.TextWrapped = true
+SpeedNegative.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/H5pshLBh'))()
+end)
+
+local function MYCGI_fake_script() 
+	local script = Instance.new('Script', Title)
+
+	local thing = script.Parent
+	local uiGradient = thing:WaitForChild("UIGradient")
+	local tweenService = game:GetService("TweenService")
+	
+	while true do
+		wait(2)
+		local tween = tweenService:Create(uiGradient, TweenInfo.new(2, Enum.EasingStyle.Linear), {Offset = Vector2.new(-1, 0)})
+		tween:Play()
+		wait(2)
+		uiGradient.Offset = Vector2.new(1, 0)
+		local tween2 = tweenService:Create(uiGradient, TweenInfo.new(2, Enum.EasingStyle.Linear), {Offset = Vector2.new(0, 0)})
+		tween2:Play()
+		wait(15)
+	end
+	
+end
+coroutine.wrap(MYCGI_fake_script)()
+local function GVUL_fake_script()
+	local script = Instance.new('LocalScript', FlyButton)
+	
+	local StarterGui = game:GetService("StarterGui")
+	
+	local button = script.Parent
+	local frame = button.Frame
+	
+	button.MouseButton1Click:Connect(function()
+		if frame.BackgroundColor3 == Color3.fromRGB(0, 0, 0) then
+			frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			StarterGui:SetCore("SendNotification",{
+				Title = "Fly Mode On.",
+				Text = "Click X to fly.",
+				Duration = 10
+			})
+		else
+			frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			StarterGui:SetCore("SendNotification",{
+				Title = "FlyMode has been off.",
+				Text = "Success OFF!",
+				Duration = 10
+			})
+		end
+	end)
+end
+coroutine.wrap(GVUL_fake_script)()
